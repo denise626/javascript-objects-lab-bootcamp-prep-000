@@ -34,7 +34,7 @@ function destructivelyDeleteFromObjectByKey(object, key) {
 var newObject = deleteFromObjectByKey(object, 'prop' );
 
 function deleteFromObjectByKey(object, key) {
-  delete object.key;
+  delete object[key];
   return object;
 }
  
